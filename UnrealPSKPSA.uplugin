@@ -3,21 +3,21 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "UnrealPSKPSA",
-	"Description": "An ActorX .psk/.pskx/.psa importer for Unreal Engine",
-	"Category": "Importers",
+	"Description": "A .psk, .pskx, and .psa importer for Unreal Engine",
+	"Category": "Import",
 	"CreatedBy": "Half",
 	"CreatedByURL": "https://twitter.com/HalfHeart",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
 	"CanContainContent": true,
-	"IsBetaVersion": false,
+	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
 	"Installed": false,
 	"Modules": [
 		{
 			"Name": "UnrealPSKPSA",
-			"Type": "Runtime",
+			"Type": "Editor",
 			"LoadingPhase": "Default"
 		}
 	]

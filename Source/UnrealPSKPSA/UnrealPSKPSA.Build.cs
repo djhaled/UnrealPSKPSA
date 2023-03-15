@@ -25,7 +25,7 @@ public class UnrealPSKPSA : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+				"Core"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -38,6 +38,17 @@ public class UnrealPSKPSA : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"ProceduralMeshComponent",
+				"UnrealEd",
+				"Projects",
+				"MeshDescription",
+                "ToolWidgets",
+
+                "RawMesh",
+				"RenderCore",
+				"MeshBuilder",
+				"MeshUtilitiesCommon", 
+				"EditorScriptingUtilities",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
