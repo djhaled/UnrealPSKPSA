@@ -78,7 +78,7 @@ UObject* UPSAFactory::Import(const FString Filename, UObject* Parent, const FNam
 
 			UE_LOG(LogTemp, Warning, TEXT(" Position %s"), *AnimKey.Position.ToString());
 			PositionalKeys.Add(FVector3f(AnimKey.Position.X, -AnimKey.Position.Y, AnimKey.Position.Z));
-			RotationalKeys.Add(FQuat4f(AnimKey.Orientation.X, -AnimKey.Orientation.Y, AnimKey.Orientation.Z, AnimKey.Orientation.W).GetNormalized());
+			RotationalKeys.Add(FQuat4f(AnimKey.Orientation.X, -AnimKey.Orientation.Y, AnimKey.Orientation.Z, (BoneIndex == 0) ? -AnimKey.Orientation.W : AnimKey.Orientation.W).GetNormalized());
 			ScaleKeys.Add(Psa.bHasScaleKeys ? Psa.ScaleKeys[KeyIndex].ScaleVector : FVector3f::OneVector);
 			//ScaleKeys.Add(FVector3f::OneVector);
 		}
